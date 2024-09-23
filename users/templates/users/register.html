@@ -9,6 +9,7 @@
           <form class="form-with-validation" action= "{% url 'users:register'%}" method="post">
             {% csrf_token %}
             {{ form }}
+            <br>
             <button class="form-submit">Submit</button>
           </form>
 {% endblock %}

@@ -1,14 +1,12 @@
 {% extends 'layout.html' %}
-
 {% block title %}
-    Posts List
+    Posts
 {% endblock %}
-
-{% block content %}
-    <section>
-    <h1>Posts</h1>
-
+<!-- Lisäyslomakkeen paikka -->
+ {% block content %}
+ <h1>Posts list</h1>
     {% for post in posts %}
+    <br>
     <div class="card">
         <div class="card-body">
         <article class="post">
@@ -22,6 +20,5 @@
         </article>
         </div>
     </div>
-    {% endfor %}
-    </section>
-{% endblock %}
+    {%endfor%}
+    {% endblock content %}
